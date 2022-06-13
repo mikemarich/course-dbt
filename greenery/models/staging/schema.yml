@@ -1,0 +1,58 @@
+
+version: 2
+
+models:
+  - name: stg_greenery__addresses
+    description: "Addresses dbt model"
+    columns:
+      - name: address_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_greenery__events
+    description: "Events dbt model"
+    columns:
+      - name: event_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_greenery__orders
+    description: "Orders dbt model"
+    columns:
+      - name: order_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_greenery__products
+    description: "Products dbt model"
+    columns:
+      - name: product_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+  
+  - name: stg_greenery__promos
+    description: "Promos dbt model"
+    columns:
+      - name: promo_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_greenery__users
+    description: "Users dbt model"
+    columns:
+      - name: user_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
